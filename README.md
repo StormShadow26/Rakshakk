@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=[](https://postimage.me/images/2025/04/19/built-at-hack36.png) />
+  <img src="https://postimage.me/images/2025/04/19/built-at-hack36.png"/>
 </p>
 
 # 🚨 RAKSHAK - Intelligent Emergency Response & Hospital Management System
@@ -54,5 +54,5 @@ RAKSHAK is a unified emergency care platform designed to act fast when every sec
 
 ## 🏁 Made at:
 <p align="left">
-  <img src="https://img.shields.io/badge/Built%20at-HACK36-orange?style=for-the-badge" />
+  <img src="https://postimage.me/images/2025/04/19/built-at-hack36.png" />
 </p>
