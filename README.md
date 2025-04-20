@@ -12,7 +12,7 @@ RAKSHAK is a unified emergency care platform designed to act fast when every sec
 ---
 
 ## 🎥 Demo Video Link:
-[Watch on Drive](https://drive.google.com/file/d/160wYOUIgoNf-6pqa0bPzcl-A5AebA5Po/view?usp=sharing)
+[Watch on Drive](https://drive.google.com/file/d/1gYVEV32XwwX51dTUS_x7A31D1RFFnkD1/view?usp=sharing)
 
 ---
 
