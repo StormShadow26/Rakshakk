@@ -88,6 +88,7 @@ const Heropage = () => {
       </main>
 
       <WebScrapping />
+      
 
       {/* Parallax Image Section */}
       <div

@@ -76,8 +76,15 @@ export default function AiDoctor() {
 
       <div className="h-[25rem] overflow-y-auto rounded-xl p-4 bg-white shadow-inner border border-gray-100 space-y-4 custom-scrollbar">
         {chat.map((msg, idx) => (
-          <div key={idx} className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
-            <div className={`flex items-start gap-3 max-w-[80%] ${msg.role === "user" ? "flex-row-reverse" : ""}`}>
+          <div
+            key={idx}
+            className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
+          >
+            <div
+              className={`flex items-start gap-3 max-w-[80%] ${
+                msg.role === "user" ? "flex-row-reverse" : ""
+              }`}
+            >
               <div className="p-1">
                 {msg.role === "user" ? (
                   <UserCircle size={30} className="text-blue-500" />
@@ -92,9 +99,7 @@ export default function AiDoctor() {
                     : "bg-green-100 text-green-900 rounded-bl-none"
                 }`}
               >
-                <span className="font-medium">
-                  {msg.role === "user" ? "You" : "AI"}:
-                </span>{" "}
+                <span className="font-medium">{msg.role === "user" ? "You" : "AI"}:</span>{" "}
                 {msg.content}
               </div>
             </div>

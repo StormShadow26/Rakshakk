@@ -1,5 +1,6 @@
 import { MapContainer, TileLayer, Circle, Popup } from 'react-leaflet';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import 'leaflet/dist/leaflet.css';
 
 export default function HotspotMap() {
@@ -15,7 +16,6 @@ export default function HotspotMap() {
       .catch(err => console.error("Failed to fetch hotspot data:", err));
   }, []);
   
-  console.log("Hotpots are:"+hotspots);
   const getColor = (title) => {
     const lower = title.toLowerCase();
     if (lower.includes("epidemic") || lower.includes("pandemic")) return "red";
@@ -105,13 +105,18 @@ export default function HotspotMap() {
           <div className="mt-8 bg-white/5 rounded-xl px-4 py-3 text-sm text-purple-300 border border-white/10 shadow-inner">
             <span className="font-semibold">💡 Tip:</span> Zoom in and click a hotspot to view detailed info.
           </div>
+
+          {/* Donate Button */}
+          <div className="mt-6 flex justify-center">
+            <Link
+              to="/donate"
+              className="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-6 py-2 rounded-full shadow-md transition"
+            >
+              Donate
+            </Link>
+          </div>
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="text-center text-sm py-6 text-purple-300 border-t border-white/10">
-        &copy; {new Date().getFullYear()} HealthChain Maps • All rights reserved.
-      </footer>
     </div>
   );
 }
